@@ -844,6 +844,10 @@ body {
   padding: 30px 0;
 
   .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     .technology-swiper {
       display: flex;
       flex-direction: column;
@@ -872,6 +876,85 @@ body {
         &:hover {
           svg rect {
             fill: #00B0E7;
+          }
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #E7E7E7;
+      
+      @media (max-width: 1024px) {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    .facts {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      .fact-card {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        transition: .3s ease;
+        .img-wrap {
+          display: flex;
+          width: 150px;
+          height: 150px;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 20px;
+          background: #FFF;
+          overflow: hidden;
+          transition: .3s ease;
+
+          @media (max-width: 1024px) {
+            width: 135px;
+            height: 135px;
+          }
+
+          img {
+            width: 313.434px;
+            height: 234.731px;
+            object-fit: contain;
+            object-position: center;
+            transform: rotate(-10.914deg);
+            transition: .3s ease;
+            filter: brightness(1.2);
+
+            @media (max-width: 1024px) {
+              width: 295.2px;
+              height: 221.075px;
+            }
+          }
+        }
+        span {
+          color: #474747;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%; /* 30px */
+          transition: .3s ease;
+          @media (max-width: 1024px) {
+            font-size: 20px;
+          }
+
+        }
+
+        &:hover {
+          .img-wrap {
+            img {
+              background: gray;
+              transform: rotate(8.215deg);
+              filter: none;
+            }
+          }
+          span {
+            transform: scale(1.1);
           }
         }
       }
