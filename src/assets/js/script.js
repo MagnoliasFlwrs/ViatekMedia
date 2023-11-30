@@ -67,6 +67,10 @@ if (technologySwiper) {
         },
         breakpoints: {
             320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            450: {
                 slidesPerView: 2.5,
                 spaceBetween: 20,
             },
@@ -90,3 +94,61 @@ if (technologySwiper) {
     });
 }
 
+let factsSwiper = document.querySelector('.facts-swiper');
+
+if (factsSwiper) {
+    const swiper = new Swiper(factsSwiper, {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        }
+    });
+}
+
+
+//contact-form
+
+const displayFormBtn = document.querySelector('.display-form-btn');
+const contactsForm = document.querySelector('.contact-us-form form');
+const contactFormInputs = document.querySelectorAll('.contact-us-form form input');
+const contactsFormTextarea = document.querySelector('.contact-us-form form textarea');
+
+if (displayFormBtn && contactsForm) {
+    displayFormBtn.addEventListener('click' , ()=> {
+        let div = displayFormBtn.closest('.form-wrapper-head');
+        div.classList.toggle('active');
+        contactsForm.classList.toggle('active');
+    })
+    contactFormInputs.forEach(el=> {
+        el.addEventListener('input' , ()=> {
+            if (el.value) {
+                el.nextElementSibling.style.display='none';
+            }
+            else {
+                el.nextElementSibling.style.display='block';
+            }
+        })
+    })
+    contactsFormTextarea.addEventListener('input' , ()=> {
+        if (contactsFormTextarea.value) {
+            contactsFormTextarea.nextElementSibling.style.display='none';
+        }
+        else {
+            contactsFormTextarea.nextElementSibling.style.display='block';
+        }
+    })
+}
