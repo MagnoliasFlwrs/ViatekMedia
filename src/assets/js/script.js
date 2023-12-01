@@ -119,7 +119,35 @@ if (factsSwiper) {
     });
 }
 
+let customersSwiper = document.querySelector('.customers-swiper');
 
+if (customersSwiper) {
+    const swiper = new Swiper(customersSwiper, {
+        loop: true,
+        navigation: {
+            nextEl: '.customers-btn-next',
+            prevEl: '.customers-btn-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            450: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            960: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1300: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
+        }
+    });
+}
 //contact-form
 
 const displayFormBtn = document.querySelector('.display-form-btn');
@@ -135,12 +163,15 @@ if (displayFormBtn && contactsForm) {
     })
     contactFormInputs.forEach(el=> {
         el.addEventListener('input' , ()=> {
-            if (el.value) {
-                el.nextElementSibling.style.display='none';
+            if (!el.classList.contains('agreement-check')) {
+                if (el.value ) {
+                    el.nextElementSibling.style.display='none';
+                }
+                else {
+                    el.nextElementSibling.style.display='block';
+                }
             }
-            else {
-                el.nextElementSibling.style.display='block';
-            }
+
         })
     })
     contactsFormTextarea.addEventListener('input' , ()=> {
