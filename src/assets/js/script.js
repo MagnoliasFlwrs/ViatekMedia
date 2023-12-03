@@ -215,6 +215,109 @@ if (plusSwiper) {
         }
       });
 }
+
+let caseSwiper = document.querySelector('.case-swiper');
+if (caseSwiper) {
+    let swiper = new Swiper(caseSwiper, {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            500: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            726: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1000: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
+      });
+}
+let shopPlusSwiper = document.querySelector('.shop-plus-swiper');
+if (shopPlusSwiper) {
+    let swiper = new Swiper(shopPlusSwiper, {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".shop-plus-next",
+          prevEl: ".shop-plus-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            520: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            630: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            960: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1250: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+            }
+        }
+      });
+}
+
+let integrationPlusSwiper = document.querySelector('.integration-plus-swiper');
+if (integrationPlusSwiper) {
+    let swiper = new Swiper(integrationPlusSwiper, {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            520: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            630: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            960: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        }
+      });
+}
 //contact-form
 
 const displayFormBtn = document.querySelector('.display-form-btn');
@@ -248,5 +351,41 @@ if (displayFormBtn && contactsForm) {
         else {
             contactsFormTextarea.nextElementSibling.style.display='block';
         }
+    })
+}
+
+
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+        change.target.classList.add('element-show');
+      }
+    });
+  }
+  let options = { threshold: [0] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.animate-row');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+
+  window.onload = () => {
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('element-show');
+
+                observer.unobserve(entry.target);
+            }
+        })
+    }, options)
+    let elements = document.querySelectorAll('.animate-row');
+    elements.forEach(i => {
+        observer.observe(i)
     })
 }
