@@ -318,6 +318,41 @@ if (integrationPlusSwiper) {
         }
       });
 }
+let priceSwiper = document.querySelector('.price-swiper');
+if (priceSwiper) {
+    let swiper = new Swiper(priceSwiper, {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".price-button-next",
+          prevEl: ".price-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            520: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            630: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            960: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        }
+      });
+}
 //contact-form
 
 const displayFormBtn = document.querySelector('.display-form-btn');
