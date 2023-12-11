@@ -424,3 +424,46 @@ function onEntry(entry) {
         observer.observe(i)
     })
 }
+
+
+// custom select
+
+const customSelects =  document.querySelectorAll('.select');
+
+if (customSelects) {
+    customSelects.forEach(el => {
+        el.addEventListener('click' , (e)=> {
+            let currentSelectWrap = e.target.closest('.select-wrap');
+            let currentSelectBody = currentSelectWrap.querySelector('.select-list');
+            let currentSelectOptions = currentSelectBody.querySelectorAll('li');
+            let currentSelectTitle = el.querySelector('p');
+            let currentImage = el.querySelector('img')
+            currentSelectBody.classList.add('active');
+            currentSelectOptions.forEach(option => {
+                option.addEventListener('click' , ()=> {
+                    if (currentSelectTitle) {
+                        currentSelectTitle.innerHTML = option.textContent;
+                        currentSelectTitle.dataset.current = option.dataset.value;
+                        currentSelectBody.classList.remove('active');
+                    }
+                    if (currentImage) {
+                        currentImage.src = option.querySelector('img').src;
+                        currentImage.dataset.current = option.dataset.value;
+                        currentSelectBody.classList.remove('active');
+                    }
+
+                })
+            })
+        })
+    })
+    document.addEventListener('click', (e)=> {
+        let lists = document.querySelectorAll('.select-list.active')
+        if (!e.target.closest('.select-wrap') && lists){
+            lists.forEach(el=> {
+                el.classList.remove('active');
+            })
+
+        }
+    })
+
+}
