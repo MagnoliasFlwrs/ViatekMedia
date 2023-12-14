@@ -425,6 +425,47 @@ function onEntry(entry) {
     })
 }
 
+// mob-observer
+
+let steps = document.querySelectorAll('.step');
+
+if (steps) {
+    function onEntry(entry) {
+        entry.forEach(change => {
+          if (change.isIntersecting) {
+            change.target.classList.add('step-animate');
+          }
+        });
+      }
+      let options = { threshold: [0] };
+      let observer = new IntersectionObserver(onEntry, options);
+      let elements = document.querySelectorAll('.step');
+      for (let elm of elements) {
+        observer.observe(elm);
+      }
+
+      window.onload = () => {
+        const options = {
+            root: null,
+            rootMargin: '300px',
+            threshold: 0
+        }
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('step-animate');
+
+                    observer.unobserve(entry.target);
+                }
+            })
+        }, options)
+        let elements = document.querySelectorAll('.step');
+        elements.forEach(i => {
+            observer.observe(i)
+        })
+    }
+}
+
 
 // custom select
 

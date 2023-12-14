@@ -8300,28 +8300,52 @@ body.dark-theme .mob-dev-block1 .content p {
   background-size: auto;
   height: 800px;
   padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
 }
-.step .content .scene {
+.step.step1.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step1.step-animate .content .scene .text {
+  left: 216px;
+  bottom: 0;
+  opacity: 1;
+}
+.step.step1.step-animate .content .scene .slon {
+  opacity: 1;
+}
+.step.step1.step-animate .content .scene .shadow {
+  right: -170px;
+  bottom: -100px;
+  opacity: 1;
+}
+.step.step1 .content .scene {
   height: 700px;
   width: 100%;
   position: relative;
 }
-.step .content .scene .number {
+.step.step1 .content .scene .number {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 2s;
 }
-.step .content .scene .text {
+.step.step1 .content .scene .text {
   max-width: 412px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: absolute;
-  left: 216px;
+  left: -200px;
+  opacity: 0;
   bottom: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
 }
-.step .content .scene .text p {
+.step.step1 .content .scene .text p {
   color: #FFF;
   font-family: UZ Sans;
   font-size: 40px;
@@ -8329,7 +8353,7 @@ body.dark-theme .mob-dev-block1 .content p {
   font-weight: 500;
   line-height: normal;
 }
-.step .content .scene .text span {
+.step.step1 .content .scene .text span {
   color: #FFF;
   font-family: UZ Sans;
   font-size: 20px;
@@ -8337,10 +8361,462 @@ body.dark-theme .mob-dev-block1 .content p {
   font-weight: 350;
   line-height: 160%; /* 32px */
 }
-.step .content .scene .slon {
+.step.step1 .content .scene .slon {
   position: absolute;
   right: 0;
   bottom: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 2s;
+}
+.step.step1 .content .scene .shadow {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  right: -470px;
+  bottom: -100px;
+  opacity: 0;
+}
+.step.step2.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step2.step-animate .content .scene .text {
+  right: 100px;
+  top: 65%;
+  opacity: 1;
+}
+.step.step2.step-animate .content .scene .house {
+  transform: scale(1);
+}
+.step.step2.step-animate .content .scene .shadow {
+  opacity: 1;
+}
+.step.step2 .content .scene {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.step.step2 .content .scene .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.6s linear;
+  transition-delay: 1s;
+}
+.step.step2 .content .scene .text {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: -200px;
+  top: 65%;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+}
+.step.step2 .content .scene .text p {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step.step2 .content .scene .text span {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+}
+.step.step2 .content .scene .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step.step2 .content .scene .text ul li {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+  display: flex;
+  gap: 10px;
+}
+.step.step2 .content .scene .text ul li::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.step.step2 .content .scene .shadow {
+  position: absolute;
+  transition: 0.6s linear;
+  transition-delay: 0.5s;
+  bottom: -100px;
+  left: 0;
+  opacity: 0;
+}
+.step.step2 .content .scene .house {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  bottom: -30px;
+  left: 200px;
+  transform: scale(0);
+}
+.step.step3.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step3.step-animate .content .scene .text {
+  left: 216px;
+  bottom: 0;
+  opacity: 1;
+}
+.step.step3.step-animate .content .scene .slon {
+  opacity: 1;
+  right: -150px;
+  bottom: 0;
+}
+.step.step3.step-animate .content .scene .shadow {
+  right: -170px;
+  bottom: -100px;
+  opacity: 1;
+}
+.step.step3.step-animate .content .scene .unity {
+  transform: scale(1);
+  opacity: 1;
+}
+.step.step3 .content .scene {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.step.step3 .content .scene .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 2s;
+}
+.step.step3 .content .scene .text {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: -200px;
+  opacity: 0;
+  bottom: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+}
+.step.step3 .content .scene .text p {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step.step3 .content .scene .text span {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+}
+.step.step3 .content .scene .slon {
+  position: absolute;
+  right: -550px;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s linear;
+  transition-delay: 2s;
+  z-index: 2;
+}
+.step.step3 .content .scene .unity {
+  position: absolute;
+  right: 250px;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.6s linear;
+  transition-delay: 2s;
+  z-index: 1;
+}
+.step.step3 .content .scene .shadow {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  right: -470px;
+  bottom: -100px;
+  opacity: 0;
+}
+.step.step4.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step4.step-animate .content .scene .text {
+  right: 100px;
+  top: 65%;
+  opacity: 1;
+}
+.step.step4.step-animate .content .scene .house {
+  transform: scale(1);
+}
+.step.step4.step-animate .content .scene .shadow {
+  opacity: 1;
+}
+.step.step4 .content .scene {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.step.step4 .content .scene .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.6s linear;
+  transition-delay: 1s;
+}
+.step.step4 .content .scene .text {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: -200px;
+  top: 65%;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+}
+.step.step4 .content .scene .text p {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step.step4 .content .scene .text span {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+}
+.step.step4 .content .scene .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step.step4 .content .scene .text ul li {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+  display: flex;
+  gap: 10px;
+}
+.step.step4 .content .scene .text ul li::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.step.step4 .content .scene .shadow {
+  position: absolute;
+  transition: 0.6s linear;
+  transition-delay: 0.5s;
+  bottom: -100px;
+  left: 0;
+  opacity: 0;
+}
+.step.step4 .content .scene .house {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  bottom: -30px;
+  left: 200px;
+  transform: scale(0);
+}
+.step.step5.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step5.step-animate .content .scene .text {
+  left: 216px;
+  bottom: 0;
+  opacity: 1;
+}
+.step.step5.step-animate .content .scene .slon {
+  opacity: 1;
+  right: -150px;
+  bottom: 0;
+}
+.step.step5.step-animate .content .scene .shadow {
+  right: -170px;
+  bottom: -100px;
+  opacity: 1;
+}
+.step.step5 .content .scene {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.step.step5 .content .scene .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 2s;
+}
+.step.step5 .content .scene .text {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: -200px;
+  opacity: 0;
+  bottom: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+}
+.step.step5 .content .scene .text p {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step.step5 .content .scene .text span {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+}
+.step.step5 .content .scene .slon {
+  position: absolute;
+  right: -550px;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 2s;
+  z-index: 2;
+}
+.step.step5 .content .scene .shadow {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  right: -470px;
+  bottom: -100px;
+  opacity: 0;
+}
+.step.step6.step-animate .content .scene .number {
+  opacity: 1;
+}
+.step.step6.step-animate .content .scene .text {
+  right: 100px;
+  top: 65%;
+  opacity: 1;
+}
+.step.step6.step-animate .content .scene .house {
+  transform: scale(1);
+}
+.step.step6.step-animate .content .scene .shadow {
+  opacity: 1;
+}
+.step.step6 .content .scene {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.step.step6 .content .scene .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.6s linear;
+  transition-delay: 1s;
+}
+.step.step6 .content .scene .text {
+  max-width: 412px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: -200px;
+  top: 65%;
+  opacity: 0;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+}
+.step.step6 .content .scene .text p {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step.step6 .content .scene .text span {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+}
+.step.step6 .content .scene .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step.step6 .content .scene .text ul li {
+  color: #FFF;
+  font-family: UZ Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+  display: flex;
+  gap: 10px;
+}
+.step.step6 .content .scene .text ul li::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.step.step6 .content .scene .shadow {
+  position: absolute;
+  transition: 0.6s linear;
+  transition-delay: 0.5s;
+  bottom: -100px;
+  left: 0;
+  opacity: 0;
+}
+.step.step6 .content .scene .house {
+  position: absolute;
+  transition: 0.3s linear;
+  transition-delay: 1s;
+  bottom: -30px;
+  left: 200px;
+  transform: scale(0);
 }
 
 .analiz-block-1 {

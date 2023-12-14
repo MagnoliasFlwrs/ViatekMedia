@@ -8142,50 +8142,594 @@ body {
   background-size: auto;
   height: 800px;
   padding-bottom: 100px;
-  .content {
-    .scene {
-      height: 700px;
-      width: 100%;
-      position: relative;
+  width: 100%;
+  overflow: hidden;
 
-      .number {
-        position: absolute;
-        top: 0;
-        left: 0;
+  &.step1 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            left: 216px;
+            bottom: 0;
+            opacity: 1;
+          }
+          .slon {
+            opacity: 1;
+          }
+          .shadow {
+            right: -170px;
+            bottom: -100px;
+            opacity: 1;
+          }
+        }
       }
-      .text {
-        max-width: 412px;
+    }
+    .content {
+      .scene {
+        height: 700px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: absolute;
-        left: 216px;
-        bottom: 0;
-        p {
-          color: #FFF;
-          font-family: UZ Sans;
-          font-size: 40px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
         }
-        span {
-          color: #FFF;
-          font-family: UZ Sans;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 350;
-          line-height: 160%; /* 32px */
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          left: -200px;
+          opacity: 0;
+          bottom: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
         }
-      }
-      .slon {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        .slon {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+        }
+        .shadow {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          right: -470px;
+          bottom: -100px;
+          opacity: 0;
+        }
       }
     }
   }
+  &.step2 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            right: 100px;
+            top: 65%;
+            opacity: 1;
+          }
+          .house {
+            transform: scale(1);
+          }
+          .shadow  {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          transition: .6s linear;
+          transition-delay: 1s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          right: -200px;
+          top: 65%;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              color: #FFF;
+              font-family: UZ Sans;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 350;
+              line-height: 160%; /* 32px */
+              display: flex;
+              gap: 10px;
+
+              &::before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                display: block;
+              }
+            }
+          }
+        }
+        .shadow {
+          position: absolute;
+          transition: .6s linear;
+          transition-delay: .5s;
+          bottom: -100px;
+          left: 0;
+          opacity: 0;
+        }
+        .house {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          bottom: -30px;
+          left: 200px;
+          transform: scale(0);
+        }
+      }
+    }
+  }
+  &.step3 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            left: 216px;
+            bottom: 0;
+            opacity: 1;
+          }
+          .slon {
+            opacity: 1;
+            right: -150px;
+            bottom: 0;
+          }
+          .shadow {
+            right: -170px;
+            bottom: -100px;
+            opacity: 1;
+          }
+          .unity {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          left: -200px;
+          opacity: 0;
+          bottom: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+        }
+        .slon {
+          position: absolute;
+          right: -550px;
+          bottom: 0;
+          opacity: 0;
+          transition: .5s linear;
+          transition-delay: 2s;
+          z-index: 2;
+        }
+        .unity {
+          position: absolute;
+          right: 250px;
+          bottom: 0;
+          opacity: 0;
+          transform: scale(0);
+          transition: .6s linear;
+          transition-delay: 2s;
+          z-index: 1;
+        }
+        .shadow {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          right: -470px;
+          bottom: -100px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &.step4 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            right: 100px;
+            top: 65%;
+            opacity: 1;
+          }
+          .house {
+            transform: scale(1);
+          }
+          .shadow  {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          transition: .6s linear;
+          transition-delay: 1s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          right: -200px;
+          top: 65%;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              color: #FFF;
+              font-family: UZ Sans;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 350;
+              line-height: 160%; /* 32px */
+              display: flex;
+              gap: 10px;
+
+              &::before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                display: block;
+              }
+            }
+          }
+        }
+        .shadow {
+          position: absolute;
+          transition: .6s linear;
+          transition-delay: .5s;
+          bottom: -100px;
+          left: 0;
+          opacity: 0;
+        }
+        .house {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          bottom: -30px;
+          left: 200px;
+          transform: scale(0);
+        }
+      }
+    }
+  }
+  &.step5 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            left: 216px;
+            bottom: 0;
+            opacity: 1;
+          }
+          .slon {
+            opacity: 1;
+            right: -150px;
+            bottom: 0;
+          }
+          .shadow {
+            right: -170px;
+            bottom: -100px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          left: -200px;
+          opacity: 0;
+          bottom: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+        }
+        .slon {
+          position: absolute;
+          right: -550px;
+          bottom: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+          z-index: 2;
+        }
+        .shadow {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          right: -470px;
+          bottom: -100px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &.step6 {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            right: 100px;
+            top: 65%;
+            opacity: 1;
+          }
+          .house {
+            transform: scale(1);
+          }
+          .shadow  {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
+
+        .number {
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          transition: .6s linear;
+          transition-delay: 1s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          right: -200px;
+          top: 65%;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              color: #FFF;
+              font-family: UZ Sans;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 350;
+              line-height: 160%; /* 32px */
+              display: flex;
+              gap: 10px;
+
+              &::before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='black'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                display: block;
+              }
+            }
+          }
+        }
+        .shadow {
+          position: absolute;
+          transition: .6s linear;
+          transition-delay: .5s;
+          bottom: -100px;
+          left: 0;
+          opacity: 0;
+        }
+        .house {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          bottom: -30px;
+          left: 200px;
+          transform: scale(0);
+        }
+      }
+    }
+  }
+
 }
 .analiz-block-1 {
   height: 851px;
