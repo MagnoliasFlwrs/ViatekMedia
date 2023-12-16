@@ -447,7 +447,7 @@ if (steps) {
       window.onload = () => {
         const options = {
             root: null,
-            rootMargin: '300px',
+            rootMargin: '200px',
             threshold: 0
         }
         const observer = new IntersectionObserver((entries, observer) => {
