@@ -8156,6 +8156,9 @@ body {
             left: 216px;
             bottom: 0;
             opacity: 1;
+            @media (max-width:1150px) {
+              left: 100px;
+            }
           }
           .slon {
             opacity: 1;
@@ -8181,6 +8184,9 @@ body {
           opacity: 0;
           transition: .3s linear;
           transition-delay: 2s;
+          @media (max-width:1150px) {
+            left: -100px;
+          }
         }
         .text {
           max-width: 412px;
@@ -8218,6 +8224,10 @@ body {
           opacity: 0;
           transition: .3s linear;
           transition-delay: 2s;
+          @media (max-width:1150px) {
+            width: 40%;
+            height: 70%;
+          }
         }
         .shadow {
           position: absolute;
@@ -8538,7 +8548,7 @@ body {
       }
     }
   }
-  &.step5 {
+  &.step5  {
     &.step-animate {
       .content {
         .scene {
@@ -8729,7 +8739,172 @@ body {
       }
     }
   }
+  &.step7  {
+    &.step-animate {
+      .content {
+        .scene {
+          .number {
+            opacity: 1;
+          }
+          .text {
+            left: 216px;
+            bottom: 0;
+            opacity: 1;
+          }
+          .slon {
+            opacity: 1;
+            right: 50px;
+            bottom: 0;
+          }
+          .shadow {
+            right: -170px;
+            bottom: -100px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .content {
+      .scene {
+        height: 700px;
+        width: 100%;
+        position: relative;
 
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+        }
+        .text {
+          max-width: 412px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          position: absolute;
+          left: -200px;
+          opacity: 0;
+          bottom: 0;
+          transition: .3s linear;
+          transition-delay: 1s;
+          p {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            color: #FFF;
+            font-family: UZ Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 160%; /* 32px */
+          }
+        }
+        .slon {
+          position: absolute;
+          right: -550px;
+          bottom: 0;
+          opacity: 0;
+          transition: .3s linear;
+          transition-delay: 2s;
+          z-index: 2;
+        }
+        .shadow {
+          position: absolute;
+          transition: .3s linear;
+          transition-delay: 1s;
+          right: -470px;
+          bottom: -100px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+}
+.instruments {
+  padding: 50px 0;
+  .content {
+    h2 {
+      color: #FFF;
+      text-align: center;
+      font-family: UZ Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 350;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+    .swiper-container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+
+      .instruments-button-prev {
+        cursor: pointer;
+      }
+      .instruments-button-next {
+        cursor: pointer;
+      }
+
+      .instruments-swiper {
+        width: calc(100% - 80px);
+        height: 100px;
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-wrap {
+              width: 85px;
+              height: 85px;
+              transition: .3s ease;
+              position: relative;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to right, transparent 0%, rgb(255 255 255 / 60%) 51%, transparent 100%);
+                background-size: 200% auto;
+                background-position: left top;
+                border-color: transparent;
+                color: #464646;
+                transition: .3s linear;
+                border-radius: 15px;
+              }
+            }
+            &:hover {
+              .img-wrap {
+                width: 95px;
+                height: 95px;
+                &::before {
+                  background-position: right bottom;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 .analiz-block-1 {
   height: 851px;

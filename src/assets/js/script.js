@@ -508,3 +508,32 @@ if (customSelects) {
     })
 
 }
+let instrumentsSwiper = document.querySelector('.instruments-swiper');
+if (instrumentsSwiper) {
+    let swiper = new Swiper(instrumentsSwiper, {
+        navigation: {
+          nextEl: ".instruments-button-next",
+          prevEl: ".instruments-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            520: {
+                slidesPerView: 3,
+            },
+            630: {
+                slidesPerView: 4,
+            },
+            960: {
+                slidesPerView: 6,
+            },
+            1024: {
+                slidesPerView: 7,
+            },
+            1200: {
+                slidesPerView: 9,
+            }
+        }
+      });
+}
