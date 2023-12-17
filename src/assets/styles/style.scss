@@ -10201,3 +10201,794 @@ body {
     }
   }
 }
+.services-block-2 {
+  padding-bottom: 60px;
+  .service-images {
+    background-image: url(../images/Group\ 12.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 352px;
+
+    .swiper-wrapper {
+      width: fit-content;
+      margin: 0 auto;
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .scene {
+          position: relative;
+          width: 500px;
+          height: 350px;
+
+          &.scene1 {
+
+            .img1 {
+              position: absolute;
+              right: 0;
+              top: 62px;
+              transition: .6s linear;
+              z-index: 1;
+            }
+            .img2 {
+              position: absolute;
+              top: 53px;
+              right: 131px;
+              transition: .6s linear;
+            }
+            .img3 {
+              position: absolute;
+              bottom: 86px;
+              right: 22px;
+              transition: .6s linear;
+              z-index: 2;
+            }
+            .img3-s {
+              position: absolute;
+              bottom: 22px;
+              right: 25px;
+              transition: .6s linear;
+              z-index: 2;
+            }
+            .img4 {
+              position: absolute;
+              left: 0;
+              top: 67px;
+              transition: .6s linear;
+            }
+            .img4-s {
+              position: absolute;
+              left: 7px;
+              bottom: 128px;
+              transition: .6s linear;
+            }
+            &:hover {
+              .img2 {
+                top: 153px;
+                right: 421px;
+                transition: .6s linear;
+              }
+              .img3 {
+                bottom: 40px;
+                right: 200px;
+                transition: .6s linear;
+              }
+              .img3-s {
+                bottom: 2px;
+                right: 200px;
+                transition: .6s linear;
+              }
+              .img4 {
+                left: 400px;
+                top: 150px;
+                transition: .6s linear;
+              }
+              .img4-s {
+                left:400px;
+                bottom: 130px;
+                transition: .6s linear;
+              }
+            }
+          }
+          &.scene2 {
+            .img1 {
+              position: absolute;
+              top: 42px;
+              left: 158px;
+              transition: .6s linear;
+              z-index: 1;
+            }
+            .img2 {
+              position: absolute;
+              right: 20px;
+              bottom: 72px;
+              transition: .6s linear;
+              z-index: 2;
+            }
+            .img2-s {
+              position: absolute;
+              transition: .6s linear;
+              right: 20px;
+              bottom: 42px;
+              z-index: 2;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 94px;
+              left: 20px;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 80px;
+              right: 140px;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 67px;
+              left: 171px;
+            }
+            .img5-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 215px;
+              left: 178px;
+            }
+            &:hover {
+              .img2 {
+                right: 68px;
+                bottom: 76px;
+                transition: .6s linear;
+              }
+              .img2-s {
+                transition: .6s linear;
+                right: 66px;
+                bottom: 32px;
+              }
+              .img3 {
+                transition: .6s linear;
+                top: 42px;
+                left: 121px;
+              }
+              .img4 {
+                transition: .6s linear;
+                top: 110px;
+                right: 10px;
+              }
+              .img5 {
+                transition: .6s linear;
+                top: 110px;
+                left: 47px;
+              }
+              .img5-s {
+                transition: .6s linear;
+                top: 215px;
+                left: 58px;
+              }
+            }
+          }
+          &.scene3 {
+            .img1 {
+              position: absolute;
+              top: 84px;
+              right: 85px;
+              transition: .6s linear;
+              z-index: 1;
+            }
+            .img1-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 263px;
+              right: 102px;
+            }
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 73px;
+              right: 131px;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 134px;
+              right: 35px;
+              z-index: 1;
+            }
+            .img3-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 296px;
+              right: 48px;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 67px;
+              left: 40px;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 67px;
+              left: 0;
+            }
+            .img5-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 215px;
+              left: 7px;
+            }
+            &:hover {
+              .img1 {
+                top: 84px;
+                right: 95px;
+                transition: .6s linear;
+              }
+              .img1-s {
+                transition: .6s linear;
+                top: 263px;
+                right: 112px;
+              }
+              .img2 {
+                transition: .6s linear;
+                top: 9px;
+                right: 415px;
+              }
+              .img3 {
+                transition: .6s linear;
+                top: 200px;
+                right: 348px;
+              }
+              .img3-s {
+                transition: .6s linear;
+                top: 300px;
+                right: 347px;
+              }
+              .img4 {
+                transition: .6s linear;
+                top: 67px;
+                left: 70px;
+              }
+              .img5 {
+                transition: .6s linear;
+                top: 108px;
+                left: 405px;
+              }
+              .img5-s {
+                transition: .6s linear;
+                top: 215px;
+                left: 412px;
+              }
+            }
+          }
+          &.scene4 {
+            .img1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 0;
+              left: 103px;
+              z-index: 1;
+            }
+            .img1-s {
+              position: absolute;
+              transition: .6s linear;
+              bottom: 30px;
+              left: 69px;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 53px;
+              right: 36px;
+            }
+            .img5-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 147px;
+              right: 43px;
+            }
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 46px;
+              left: 158px;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              right: 6px;
+              bottom: 45px;
+              z-index: 2;
+            }
+            .img-4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 37px;
+              left: 0;
+              z-index: 2;
+            }
+            .img-4-s {
+              position: absolute;
+              transition: .6s linear;
+              bottom: 67px;
+              left: 8px;
+            }
+            &:hover {
+              .img1 {
+                transition: .6s linear;
+                top: 10px;
+                left: 103px;
+              }
+              .img1-s {
+                transition: .6s linear;
+                bottom: 30px;
+                left: 69px;
+              }
+              .img5 {
+                transition: .6s linear;
+                top: 0px;
+                right: 386px;
+              }
+              .img5-s {
+                transition: .6s linear;
+                top: 147px;
+                right: 393px;
+              }
+              .img2 {
+                transition: .6s linear;
+                top: 96px;
+                left: 408px;
+              }
+              .img3 {
+                transition: .6s linear;
+                right: 54px;
+                bottom: 145px;
+              }
+              .img-4 {
+                transition: .6s linear;
+                top: 97px;
+                left: 70px;
+                z-index: 2;
+              }
+              .img-4-s {
+                transition: .6s linear;
+                bottom: 67px;
+                left: 68px;
+              }
+            }
+          }
+          &.scene5 {
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 86px;
+              left: 0;
+              z-index: 1;
+            }
+            .img3-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 250px;
+              left: 0;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 105px;
+              right: 63px;
+            }
+            .img4-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 253px;
+              right: 71px;
+            }
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 16px;
+              left: 200px;
+            }
+            .img1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 65px;
+              left: 157px;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 30px;
+              left: 86px;
+            }
+            .img1-s {
+              position: absolute;
+              transition: .6s linear;
+              bottom: 13px;
+              left: 146px;
+            }
+
+            &:hover {
+              .img3 {
+                transition: .6s linear;
+                top: 172px;
+                left: 49px;
+                transform: scale(1.1);
+              }
+              .img3-s {
+                transition: .6s linear;
+                top: 300px;
+                left: 60px;
+              }
+              .img4 {
+                transition: .6s linear;
+                top: 125px;
+                right: 125px;
+                transform: scale(1.1);
+              }
+              .img4-s {
+                transition: .6s linear;
+                top: 295px;
+                right: 134px;
+              }
+              .img2 {
+                transition: .6s linear;
+                top: 35px;
+                left: 345px;
+              }
+              .img1 {
+                transition: .6s linear;
+                top: 72px;
+                left: 157px;
+              }
+              .img5 {
+                transition: .6s linear;
+                top: 64px;
+                left: 128px;
+              }
+            }
+          }
+          &.scene6 {
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 53px;
+              left: 150px;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 94px;
+              right: 10px;
+              z-index: 1;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              left: 0;
+              top: 67px;
+            }
+            .img1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 22px;
+              left: 110px;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 260px;
+              left: 81px;
+            }
+            .img6 {
+              position: absolute;
+              transition: .6s linear;
+              top: 85px;
+              left: 320px;
+            }
+            .img6-2 {
+              position: absolute;
+              transition: .5s linear;
+              top: 168px;
+              left: 265px;
+            }
+            .img6-3 {
+              position: absolute;
+              transition: .4s linear;
+              top: 150px;
+              left: 204px;
+            }
+            .img6-4 {
+              position: absolute;
+              transition: .3s linear;
+              top: 208px;
+              left: 152px;
+            }
+            .img7 {
+              position: absolute;
+              transition: .6s linear;
+              top: 246px;
+              left: 213px;
+            }
+            .img7-1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 278px;
+              left: 207px;
+            }
+            .img8 {
+              position: absolute;
+              transition: .6s linear;
+              top:255px;
+              left: 155px;
+            }
+            .img8-1 {
+              position: absolute;
+              transition: .6s linear;
+              top:280px;
+              left: 151px;
+            }
+            &:hover {
+              .img2 {
+                position: absolute;
+                transition: .6s linear;
+                top: 183px;
+                left: 49px;
+              }
+              .img3 {
+                transition: .6s linear;
+                top: 215px;
+                right: 50px;
+              }
+              .img4 {
+                transition: .6s linear;
+                left: 200px;
+                top: 187px;
+              }
+              .img1 {
+                transition: .6s linear;
+                top: 22px;
+                left: 154px;
+                transform: scale(1.1);
+              }
+              .img6 {
+                transition: .6s linear;
+                top: 110px;
+              }
+              .img6-2 {
+                transition: .5s linear;
+                top: 187px;
+              }
+              .img6-3 {
+                transition: .4s linear;
+                top: 163px;
+              }
+              .img6-4 {
+                transition: .3s linear;
+                top: 215px;
+              }
+              .img7 {
+                transition: .6s linear;
+                top: 241px;
+                left: 133px;
+              }
+              .img7-1 {
+                transition: .6s linear;
+                top: 273px;
+                left: 127px;
+              }
+              .img8 {
+                transition: .6s linear;
+                top:252px;
+                left: 105px;
+              }
+              .img8-1 {
+                transition: .6s linear;
+                top:277px;
+                left: 101px;
+              }
+            }
+          }
+        }
+        // &.swiper-slide-prev {
+        //   display: flex;
+        //   justify-content: flex-start;
+        //   align-items: flex-end;
+        //   .scene {
+        //     width: 280px;
+        //     height: 196px;
+        //     flex-shrink: 0;
+        //     opacity: 0.9;
+        //     margin-left: 30px;
+        //     background-color: #fff;
+        //     filter: blur(10.00000286102295px);
+        //     img {
+        //       width: 100px;
+        //       height:100px;
+        //       // top: 50%;
+        //       // left: 50%;
+        //     }
+
+        //   }
+        //   .scene > img {
+        //     width: 40%;
+        //     height: 40%;
+        //     object-fit: contain;
+        //     top: 50% !important;
+        //     left: 50% !important;
+        //     &:hover {
+        //       top: 50% !important;
+        //     left: 50% !important;
+        //     }
+        //   }
+        // }
+        // &.swiper-slide-next {
+        //   display: flex;
+        //   justify-content: flex-end;
+        //   align-items: flex-start;
+        //   .scene {
+        //     width: 280px;
+        //     height: 196px;
+        //     flex-shrink: 0;
+        //     opacity: 0.9;
+        //     margin-right: 30px;
+        //     background-color: #fff;
+        //     filter: blur(10.00000286102295px);
+        //   }
+        //   .scene > img {
+        //     width: 40%;
+        //     height: 40%;
+        //     object-fit: contain;
+        //     top: 50% !important;
+        //     left: 50% !important;
+        //     &:hover {
+        //       top: 50% !important;
+        //     left: 50% !important;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    gap: 20px;
+    .left-block {
+      width: 305px;
+      flex-shrink: 0;
+      @media (max-width:1024px) {
+        display: none;
+      }
+    }
+    .right-block {
+      width: calc(100% - 305px);
+      .services-description {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            justify-content: space-between;
+            .col {
+              &:first-child {
+                padding-top: 60px;
+                max-width: 407px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2 {
+                  color: #EBEBEB;
+                  font-family: UZ Sans;
+                  font-size: 70px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 89%; /* 62.3px */
+                  @media (max-width:1024px) {
+                    font-size: 50px;
+                  }
+                }
+                a {
+                  border-radius: 3px;
+                  border: 1px solid #474747;
+                  background: rgba(1, 194, 255, 0.00);
+                  display: inline-flex;
+                  padding: 20px 30px;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  transition: .3s ease;
+                  width: fit-content;
+                  span {
+                    color: #474747;
+                    font-family: UZ Sans;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    transition: .3s ease;
+                  }
+                  svg path {
+                    transition: .3s ease;
+                  }
+                  &:hover {
+                    border-radius: 3px;
+                    border: 1px solid #01C2FF;
+                    background: #01C2FF;
+                    span {
+                      color: #fff;
+                    }
+                    svg path {
+                      stroke: #fff;
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                max-width: 413px;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                p {
+                  overflow: hidden;
+                  color: #000;
+                  font-family: UZ Sans;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 160%; /* 28.8px */
+                }
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  li {
+                    color: #000;
+                    font-family: UZ Sans;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 350;
+                    line-height: 160%;
+                    text-overflow: ellipsis;
+                    display: flex;
+                    gap: 10px;
+                    &::before {
+                      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8C4 5.79086 5.79086 4 8 4H16C18.2091 4 20 5.79086 20 8V16C20 18.2091 18.2091 20 16 20H8C5.79086 20 4 18.2091 4 16V8Z' fill='white'/%3E%3Cpath d='M11 15L14 12L11 9M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20Z' stroke='%2301C2FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                      display: block;
+                      margin-top: 4px;
+                    }
+                  }
+                }
+                span {
+                  overflow: hidden;
+                  color: #000;
+                  font-family: UZ Sans;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 350;
+                  line-height: 160%; /* 28.8px */
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-prev {
+          left: 0;
+          top: 10px;
+          &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Crect y='0.5' width='24' height='24' rx='3' fill='%2301C2FF'/%3E%3Cpath d='M9.07959 12.6258C8.89973 12.4472 8.79966 12.2053 8.79966 11.9532C8.79966 11.6999 8.89973 11.458 9.07959 11.2806L13.4952 6.88276C13.8676 6.51289 14.4693 6.51416 14.8391 6.8853C15.209 7.2577 15.209 7.85936 14.8366 8.22923L11.0961 11.9532L14.8366 15.6772C15.209 16.0471 15.209 16.6475 14.8391 17.0199C14.4693 17.3923 13.8676 17.3936 13.4952 17.0224L9.07959 12.6258Z' fill='white'/%3E%3C/svg%3E");
+          }
+        }
+        .swiper-button-next {
+          left: 44px;
+          top: 10px;
+          &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Crect width='24' height='24' rx='3' transform='matrix(-1 0 0 1 24 0.5)' fill='%2301C2FF'/%3E%3Cpath d='M14.9204 12.6258C15.1003 12.4472 15.2003 12.2053 15.2003 11.9532C15.2003 11.6999 15.1003 11.458 14.9204 11.2806L10.5048 6.88276C10.1324 6.51289 9.53074 6.51416 9.16087 6.8853C8.79101 7.2577 8.79101 7.85936 9.16341 8.22923L12.9039 11.9532L9.16341 15.6772C8.79101 16.0471 8.79101 16.6475 9.16087 17.0199C9.53074 17.3923 10.1324 17.3936 10.5048 17.0224L14.9204 12.6258Z' fill='white'/%3E%3C/svg%3E");
+          }
+        }
+      }
+    }
+  }
+}

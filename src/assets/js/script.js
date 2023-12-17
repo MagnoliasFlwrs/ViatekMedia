@@ -537,3 +537,29 @@ if (instrumentsSwiper) {
         }
       });
 }
+
+let servicesDescr = document.querySelector('.services-description');
+let servicesImages = document.querySelector('.service-images');
+
+if (servicesDescr && servicesImages) {
+    var swiper4 = new Swiper(servicesImages, {
+        slidesPerView: 1,
+        // centeredSlides:true,
+        // centeredSlidesBounds:true ,
+        // centerInsufficientSlides:true,
+        direction: "horizontal",
+        loop:true,
+      });
+
+      var swiper5 = new Swiper(servicesDescr, {
+        slidesPerView: 1,
+        loop:true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper4,
+        },
+      });
+}
