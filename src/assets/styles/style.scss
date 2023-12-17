@@ -10422,6 +10422,25 @@ body {
               top: 215px;
               left: 7px;
             }
+            .img8 {
+              position: absolute;
+              transition: .6s linear;
+              top: 0;
+              left: 127px;
+              z-index: 1;
+            }
+            .img9 {
+              position: absolute;
+              transition: .6s linear;
+              top: 93px;
+              left: 97px;
+            }
+            .img10 {
+              position: absolute;
+              transition: .6s linear;
+              top: 323px;
+              left: 230px;
+            }
             &:hover {
               .img1 {
                 top: 84px;
@@ -10462,6 +10481,16 @@ body {
                 transition: .6s linear;
                 top: 215px;
                 left: 412px;
+              }
+              .img8 {
+                transition: .6s linear;
+                top: 10px;
+                left: 127px;
+              }
+              .img9 {
+                transition: .6s linear;
+                top: 83px;
+                left: 87px;
               }
             }
           }
@@ -10791,6 +10820,200 @@ body {
                 top:277px;
                 left: 101px;
               }
+            }
+          }
+          &.scene7 {
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 24px;
+              left: 13px;
+            }
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 43px;
+              right: 142px;
+            }
+            .img1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 5px;
+              right: 2px;
+              z-index: 1;
+            }
+            .img1-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 212px;
+              right: 0;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 72px;
+              left: 128px;
+            }
+            .img3-s {
+              position: absolute;
+              transition: .6s linear;
+              bottom: 34px;
+              left: 128px;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 80px;
+              left: 25px;
+              z-index: 1;
+            }
+            .img4-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 235px;
+              left: 28px;
+            }
+
+            &:hover {
+              .img5 {
+                transition: .6s linear;
+                top: 13px;
+                left: 395px;
+              }
+              .img2 {
+                transition: .6s linear;
+                top: 156px;
+                right: 438px;
+              }
+              .img1 {
+                transition: .6s linear;
+                top: 75px;
+                right: 45px;
+              }
+              .img1-s {
+                transition: .6s linear;
+                top: 242px;
+                right: 47px;
+              }
+              .img3 {
+                transition: .6s linear;
+                top: 62px;
+                left: 128px;
+              }
+              .img4 {
+                transition: .6s linear;
+                top: 51px;
+                left: 64px;
+              }
+              .img4-s {
+                transition: .6s linear;
+                top: 235px;
+                left: 67px;
+              }
+            }
+          }
+          &.scene8 {
+            .img2 {
+              position: absolute;
+              transition: .6s linear;
+              top: 67px;
+              left: 0;
+            }
+            .img5 {
+              position: absolute;
+              transition: .6s linear;
+              top: 32px;
+              right: 32px;
+            }
+            .img1 {
+              position: absolute;
+              transition: .6s linear;
+              top: 37px;
+              left: 102px;
+            }
+            .img1-s {
+              position: absolute;
+              transition: .6s linear;
+              top: 293px;
+              left: 61px;
+            }
+            .img3 {
+              position: absolute;
+              transition: .6s linear;
+              top: 7px;
+              left: 150px;
+              z-index: 1;
+            }
+            .img4 {
+              position: absolute;
+              transition: .6s linear;
+              top: 93px;
+              left: 309px;
+              z-index: 1;
+            }
+            .img6 {
+              position: absolute;
+              transition: .6s linear;
+              top: 134px;
+              left: 26px;
+              z-index: 1;
+            }
+            .img7 {
+              position: absolute;
+              transition: .6s linear;
+              top: 182px;
+              left: 413px;
+              z-index: 1;
+            }
+
+            &:hover {
+              .img2 {
+                transition: .6s linear;
+                top: 181px;
+                left: 345px;
+              }
+              .img5 {
+                transition: .6s linear;
+                top: 161px;
+                right: 455px;
+              }
+              .img1 {
+                transition: .6s linear;
+                top: 45px;
+                left: 121px;
+              }
+              .img1-s {
+                transition: .6s linear;
+                top: 293px;
+                left: 80px;
+              }
+              .img3 {
+                transition: .6s linear;
+                top: 27px;
+                left: 47px;
+              }
+              .img4 {
+                transition: .6s linear;
+                top: 116px;
+                left: 246px;
+              }
+              .img6 {
+                transition: .6s linear;
+                top: 113px;
+                left: 80px;
+              }
+              .img7 {
+                transition: .6s linear;
+                top: 101px;
+                left: 366px;
+                z-index: 1;
+              }
+            }
+          }
+          &.scene9 {
+            .img2 {
+              top: 53px;
+              left: 339px;
             }
           }
         }

@@ -10663,6 +10663,25 @@ body.dark-theme .mob-dev-block1 .content p {
   top: 215px;
   left: 7px;
 }
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3 .img8 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 0;
+  left: 127px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3 .img9 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 93px;
+  left: 97px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3 .img10 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 323px;
+  left: 230px;
+}
 .services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3:hover .img1 {
   top: 84px;
   right: 95px;
@@ -10702,6 +10721,16 @@ body.dark-theme .mob-dev-block1 .content p {
   transition: 0.6s linear;
   top: 215px;
   left: 412px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3:hover .img8 {
+  transition: 0.6s linear;
+  top: 10px;
+  left: 127px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene3:hover .img9 {
+  transition: 0.6s linear;
+  top: 83px;
+  left: 87px;
 }
 .services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene4 .img1 {
   position: absolute;
@@ -11017,6 +11046,188 @@ body.dark-theme .mob-dev-block1 .content p {
   transition: 0.6s linear;
   top: 277px;
   left: 101px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img5 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 24px;
+  left: 13px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img2 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 43px;
+  right: 142px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img1 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 5px;
+  right: 2px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img1-s {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 212px;
+  right: 0;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img3 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 72px;
+  left: 128px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img3-s {
+  position: absolute;
+  transition: 0.6s linear;
+  bottom: 34px;
+  left: 128px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img4 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 80px;
+  left: 25px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7 .img4-s {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 235px;
+  left: 28px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img5 {
+  transition: 0.6s linear;
+  top: 13px;
+  left: 395px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img2 {
+  transition: 0.6s linear;
+  top: 156px;
+  right: 438px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img1 {
+  transition: 0.6s linear;
+  top: 75px;
+  right: 45px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img1-s {
+  transition: 0.6s linear;
+  top: 242px;
+  right: 47px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img3 {
+  transition: 0.6s linear;
+  top: 62px;
+  left: 128px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img4 {
+  transition: 0.6s linear;
+  top: 51px;
+  left: 64px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene7:hover .img4-s {
+  transition: 0.6s linear;
+  top: 235px;
+  left: 67px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img2 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 67px;
+  left: 0;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img5 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 32px;
+  right: 32px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img1 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 37px;
+  left: 102px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img1-s {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 293px;
+  left: 61px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img3 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 7px;
+  left: 150px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img4 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 93px;
+  left: 309px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img6 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 134px;
+  left: 26px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8 .img7 {
+  position: absolute;
+  transition: 0.6s linear;
+  top: 182px;
+  left: 413px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img2 {
+  transition: 0.6s linear;
+  top: 181px;
+  left: 345px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img5 {
+  transition: 0.6s linear;
+  top: 161px;
+  right: 455px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img1 {
+  transition: 0.6s linear;
+  top: 45px;
+  left: 121px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img1-s {
+  transition: 0.6s linear;
+  top: 293px;
+  left: 80px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img3 {
+  transition: 0.6s linear;
+  top: 27px;
+  left: 47px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img4 {
+  transition: 0.6s linear;
+  top: 116px;
+  left: 246px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img6 {
+  transition: 0.6s linear;
+  top: 113px;
+  left: 80px;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene8:hover .img7 {
+  transition: 0.6s linear;
+  top: 101px;
+  left: 366px;
+  z-index: 1;
+}
+.services-block-2 .service-images .swiper-wrapper .swiper-slide .scene.scene9 .img2 {
+  top: 53px;
+  left: 339px;
 }
 .services-block-2 .content {
   display: flex;
