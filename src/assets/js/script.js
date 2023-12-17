@@ -544,6 +544,7 @@ let servicesImages = document.querySelector('.service-images');
 if (servicesDescr && servicesImages) {
     var swiper4 = new Swiper(servicesImages, {
         slidesPerView: 1,
+        loop:true,
         // centeredSlides:true,
         // centeredSlidesBounds:true ,
         // centerInsufficientSlides:true,
@@ -557,6 +558,10 @@ if (servicesDescr && servicesImages) {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         thumbs: {
           swiper: swiper4,
