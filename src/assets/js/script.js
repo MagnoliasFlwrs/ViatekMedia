@@ -19,8 +19,11 @@ function closeMobileMenu() {
         })
     })
 }
-showMobileMenu();
-closeMobileMenu();
+if (openBurgerBtn && mobileMenu) {
+    showMobileMenu();
+    closeMobileMenu();
+}
+
 
 //burger submenu
 const dropdownLink = document.querySelector('.dropright');
@@ -53,8 +56,11 @@ function goBackBurgerSubmenu(){
         })
     })
 }
-openBurgerSubmenu();
-goBackBurgerSubmenu();
+if (openBurgerBtn && mobileMenu) {
+    openBurgerSubmenu();
+    goBackBurgerSubmenu();
+}
+
 
 
 let technologySwiper = document.querySelector('.technology-swiper');

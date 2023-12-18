@@ -2949,7 +2949,7 @@ body {
             overflow: hidden;
             opacity: 0;
             transition: .3s ease;
-            z-index: 1;
+            z-index: 10;
 
             .content-row {
               width: 100%;
@@ -3153,7 +3153,7 @@ body {
 
       &.open {
         top: 0;
-        overflow: hidden;
+        // overflow: hidden;
         opacity: 1;
         visibility: visible;
       }
@@ -11905,7 +11905,7 @@ body {
 
       .service-images {
         background: transparent;
-        width: 500px;
+        width: 650px;
         height: 352px;
         margin: 0 auto;
         overflow: unset;
@@ -13101,6 +13101,11 @@ body {
           .swiper-slide {
             display: flex;
             justify-content: space-between;
+            opacity: 0;
+
+            &.swiper-slide-active {
+              opacity: 1;
+            }
 
             .col {
               @media (max-width:768px) {
